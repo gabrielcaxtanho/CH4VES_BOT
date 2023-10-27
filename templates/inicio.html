@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHVEZ BOT </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+
+
+</head>
+<body>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+<div class="dasheader" id="inicio2" >
+    <div class="dasheader2 card" id="inicio" style="background-color: aliceblue;">
+
+        <h1 style="background-color: aliceblue;">CHVEZ BOT</h1>
+
+    </div>
+</div>
+
+<div class="header0">
+    <div class="header1" id="meiopergunta">
+        <div class="header2">
+            <form action="/pergunta" method="post">
+                <fieldset>
+                <div class="form-group" id="cetralpergunta">
+                    <label for="pergunta" style="margin-left: 25%; padding-bottom: 2%;">DIGITE AQUI DE FORMA SIMPLES E DIRETA O QUE DESEJA SE APROFUNDAR UM POUCO MAIS: </label>
+                    <input type="text" id="pergunta" name="pergunta" class="form-control" style="    margin-left: 28%; text-align: center;">
+                    <button type="submit" class="btn btn-secondary btn-lg" style="margin-left: 29%; margin-top: 5%; padding: 2%;">Enviar pergunta</button>
+                </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div>
+        <div style="display: flex;margin-left: 28%;justify-content: center;flex-direction: column;">
+            <p style="background-size: cover;background-repeat: no-repeat; width: 50%;padding-top: 30%;margin-top: 15%;
+    background-image: url('https://kadufernandiz.com/wp-content/uploads/2017/09/black-mirror-usro-branco.jpg');
+">
+
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

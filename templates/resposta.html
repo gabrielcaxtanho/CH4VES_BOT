@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHVEZ WK</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+
+
+</head>
+<body>
+
+
+
+<div class="dasheader" id="inicio2" >
+    <div class="dasheader2 card" id="inicio" style="background-color: aliceblue;">
+
+        <h1 style="background-color: aliceblue;">CHVEZ BOT</h1>
+
+    </div>
+</div>
+
+
+ <div class="header0" style="padding: 5%;">
+    <div class="header1 ">
+        <div class="header2 card">
+            <h2 style="text-align: center;">SUA DUVIDA: {{  pergunta }}</h2>
+            <p>{{ resposta }}</p>
+
+
+        </div>
+         <button type="submit" class="btn btn-secondary btn-lg" style="margin-left: 42%; margin-top: 5%; padding: 2%;"onclick="window.location.href = '/';">OUTRA PERGUNTA</button>
+
+    </div>
+</div>
+
+
+<script>
+    function adjustButtonMargin() {
+        var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var larguraDeCorte = 500;
+
+        var button = document.querySelector(".btn.btn-secondary.btn-lg");
+
+        if (larguraDaTela > larguraDeCorte && button) {
+            button.style.marginLeft = "42%";
+        }
+        else {
+            // Se a largura da tela for maior ou o botão não existir, redefina a margem esquerda para o valor padrão.
+            button.style.marginLeft = "0%";
+        }
+    }
+
+    // Chame a função inicialmente e sempre que a janela for redimensionada.
+    adjustButtonMargin();
+    window.addEventListener('resize', adjustButtonMargin);
+</script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+</body>
+</html>
+
