@@ -45,7 +45,11 @@ def perguntass():
 def criar():
     pergunta = request.form['pergunta']
     session['pergunta'] = pergunta
-    ip_address = request.remote_addr
+    # Registrar o acesso
+    if 'X-Forwarded-For' in request.headers:
+        ip_address = request.headers['X-Forwarded-For']
+    else:
+        ip_address = request.remote_addr
     # Obter informações de geolocalização usando o serviço "ipinfo.io"
     geo_info = requests.get(f"https://ipinfo.io/{ip_address}/json").json()
     location = geo_info.get("city", "Desconhecida")  # Pode usar outros campos como "country" ou "region" conforme necessário
