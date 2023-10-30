@@ -1,4 +1,4 @@
-<h1> 🍟 Sistema de gerenciamento de pedidos internos de FAST-FOOD🍟</h1>
+<h1> 👾 CH4VES_BOT 👾</h1>
 <h2>  🟢  Sistema feito em Python com flask   </h2>
 <h2>  🟢  Sistema de mensagem para avisar o cliente quando o pedido fica pronto sem a necessidade de o atendente enviar mensagem, apenas colocar o status como PRONTO e habilitar o codigo que ativa a biblioteca twilio   </h2>
 <h2>  🟢  Tela para o local aonde os clientes ficam com painel com mesa e SENHA para o cliente saber a hora de pegar o lanche   </h2>
