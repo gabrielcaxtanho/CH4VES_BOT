@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registros de Acesso</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+          <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+
+
+</head>
+<body>
+<div class="dasheader" id="inicio2" >
+    <div class="dasheader2 card" id="inicio" style="background-color: aliceblue;">
+    <h1>Registros de Acesso</h1>
+    </div>
+</div>
+<div class="header0">
+    <div class="header1" id="meiopergunta">
+        <div class="header2">
+    <table>
+        <tr>
+            <th>Endereço IP</th>
+            <th>Data e Hora</th>
+            <th>LOCALIZAÇÃO</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.ip_address }}</td>
+            <td>{{ log.timestamp }}</td>
+            <td>{{ log.location }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</div>
+    </div>
+</div>
+
+</body>
+</html>
