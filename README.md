@@ -9,7 +9,7 @@
 
 <h2>💻 SISTEMA ></h2>
 <h2>🟢 https://chavesbot.onrender.com </h2>
-<h2> Este é um código Python que cria um servidor web usando o framework Flask e permite que os usuários façam perguntas e obtenham respostas da Wikipedia. Vou explicar as funcionalidades deste código em detalhes:
+<h2> Este é um código Python que cria um servidor web usando o framework Flask e permite que os usuários façam perguntas e obtenham respostas da Wikipedia. Vou explicar as funcionalidades deste código em detalhes:</h2>
 
 <h2> Importação de Bibliotecas:</h2>
 
