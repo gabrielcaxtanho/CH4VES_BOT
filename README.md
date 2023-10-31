@@ -9,16 +9,20 @@
 
 <h2>💻 SISTEMA ></h2>
 <h2>🟢 https://chavesbot.onrender.com </h2>
-<h2> Este é um código Python que cria um servidor web usando o framework Flask e permite que os usuários façam perguntas e obtenham respostas da Wikipedia. Vou explicar as funcionalidades deste código em detalhes:</h2>
-
+<br>
+<h2>💻 CODIGO ></h2>
+<h2> Este é um código Python que cria um servidor web usando o framework Flask e permite que os usuários façam perguntas e obtenham respostas da Wikipedia. </h2>
+<br>
+<h2> Vou explicar as funcionalidades deste código em detalhes:</h2>
+<br>
 <h2> Importação de Bibliotecas:</h2>
-
+<br>
 <h2>wikipedia: Importa a biblioteca Wikipedia API, que permite realizar pesquisas na Wikipedia.
-Flask: Importa a biblioteca Flask, um framework para criar aplicativos da web.
-render_template, request, redirect, session, e jsonify: Importa classes e funções do Flask para renderizar templates HTML, manipular solicitações HTTP, redirecionar páginas, gerenciar sessões e serializar/desserializar JSON.
-datetime: Importa a classe datetime para trabalhar com datas e horários.
-requests: Importa a biblioteca requests para fazer solicitações HTTP, usada para obter informações de geolocalização.
-Instância do Aplicativo Flask:</h2>
+<h2>Flask: Importa a biblioteca Flask, um framework para criar aplicativos da web.
+<h2>render_template, request, redirect, session, e jsonify: Importa classes e funções do Flask para renderizar templates HTML, manipular solicitações HTTP, redirecionar páginas, gerenciar sessões e serializar/desserializar JSON.</h2>
+<h2>datetime: Importa a classe datetime para trabalhar com datas e horários.</h2>
+<h2>requests: Importa a biblioteca requests para fazer solicitações HTTP, usada para obter informações de geolocalização.</h2>
+<h2>Instância do Aplicativo Flask:</h2>
 
 <h2>app = Flask(__name__): Cria uma instância do aplicativo Flask.</h2>
 <h2>Chave Secreta de Sessão:</h2>
