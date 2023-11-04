@@ -4,6 +4,7 @@ from datetime import datetime
 import requests
 
 app = Flask(__name__)
+#Define uma chave secreta para a sessão do Flask. Isso é usado para proteger os dados da sessão.
 app.secret_key = 'tiodino'
 wikipedia.set_lang('pt')
 
